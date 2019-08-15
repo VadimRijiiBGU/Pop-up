@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop-up notifications</title>
+    <link href="pop-up.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="centerPopup">
+        <button id="centerPopupButton">Show pop-up</button>ё
+    </div>
+    <div class="rightPopup">
+        <button data-status="error" id="errorButton">Show error pop-up</button>
+        <button id="warningButton" data-status="warning">Show warning pop-up</button>
+        <button id="successButton" data-status="success">Show success pop-up</button>
+        <button id="infoButton" data-status="info">Show info pop-up</button>
+    </div>
+
+    <script src="basic-pop-up.js"></script>
+    <script src="center-pop-up.js"></script>
+    <script src="right-pop-up.js"></script>
+    <script src="pop-up.js"></script>
+</body>
+</html>
