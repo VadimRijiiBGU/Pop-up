@@ -1,3 +1,7 @@
+body {
+    overflow: auto;
+}
+
 .modal {
     display: block;
     position: fixed;
@@ -46,22 +50,42 @@
     margin: 0;
 }
 
+.centerPopup {
+    width: 30%;
+}
+
 .rightPopup {
-    position: absolute;
+    width: 30%;
     display: inline-block;
-    right: 50%;
-    top: 0px;
+    
+
 }
 
 .rightPopup button {
     display: block;
-    margin: 10px;
-    width: 150px;
+    margin: 10px 0;
 }
+
+button {
+    width: 100%;
+}
+
+/*.rightPopup {
+    position: absolute;
+    display: inline-block;
+    right: 50%;
+    top: 0px;
+}*/
+
+/*.rightPopup button {
+    display: block;
+    margin: 10px 0px;
+    width: 150px;
+}*/
 
 .close {
     float: right;
-    top: 0px;
+    top: 0;
     color: #aaaaaa;
     font-size: 20px;
     font-weight: bold;
@@ -80,26 +104,10 @@
     font-family: "Comic Sans MS";
 }
 
-/*.error .specialSymbol {
-    color: red;
-}
-
-.warning .specialSymbol {
-    color: yellow;
-}
-
-.success .specialSymbol {
-    color: lawngreen;
-}
-
-.info .specialSymbol {
-    color: darkorange;
-}*/
-
 .toastNotifications {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
 }
 
 .notificationContent {
