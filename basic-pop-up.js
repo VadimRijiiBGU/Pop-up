@@ -1,3 +1,5 @@
+'use-strict';
+
 function Popup(content) {
     this.content = content;
     this.element = null;

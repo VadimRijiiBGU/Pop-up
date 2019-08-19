@@ -1,3 +1,5 @@
+'use-strict';
+
 function RightPopup(content, status) {
     Popup.call(this, content);
     this.element = this.createPopup(status);

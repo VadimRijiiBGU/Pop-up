@@ -1,3 +1,5 @@
+'use-strict';
+
 function CenterPopup(content) {
     Popup.call(this, content);
     this.element = this.createPopup();
