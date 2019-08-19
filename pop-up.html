@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <title>Pop-up notifications</title>
     <link href="pop-up.css" rel="stylesheet">
 
 </head>
 <body>
-    <div class="centerPopup">
-        <button id="centerPopupButton">Show pop-up</button>ё
+    <div class="popupButtons">
+        <button id="centerPopupButton">Show center pop-up</button>
+        <div class="rightPopup">
+            <button id="errorButton" data-status="error" data-content="Error!">Show error pop-up</button>
+            <button id="warningButton" data-status="warning" data-content="Warning!">Show warning pop-up</button>
+            <button id="successButton" data-status="success" data-content="Success!">Show success pop-up</button>
+            <button id="infoButton" data-status="info" data-content="Info!">Show info pop-up</button>
+        </div>
     </div>
-    <div class="rightPopup">
-        <button data-status="error" id="errorButton">Show error pop-up</button>
-        <button id="warningButton" data-status="warning">Show warning pop-up</button>
-        <button id="successButton" data-status="success">Show success pop-up</button>
-        <button id="infoButton" data-status="info">Show info pop-up</button>
-    </div>
+    <div class="centerPopup"></div>
 
     <script src="basic-pop-up.js"></script>
     <script src="center-pop-up.js"></script>
