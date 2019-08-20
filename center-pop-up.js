@@ -3,12 +3,13 @@
 function CenterPopup(content) {
     Popup.call(this, content);
     this.element = this.createPopup();
+    this.fadeCenterPopup = CenterPopup.prototype.fadeCenterPopup.bind(this);
 }
 
 CenterPopup.prototype = Object.create(Popup.prototype);
 CenterPopup.prototype.show = function(node) {
     Popup.prototype.show.call(this, node);
-    window.addEventListener("click", this.fadeCenterPopup.bind(this));
+    window.addEventListener("click", this.fadeCenterPopup);
 };
 
 CenterPopup.prototype.hide = function() {
