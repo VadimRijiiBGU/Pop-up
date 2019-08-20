@@ -9,6 +9,6 @@ Popup.prototype.show = function (node) {
 };
 Popup.prototype.hide = function () {
     this.element.classList.add("fade");
-    document.getElementsByClassName("fade")[0].style.opacity = 0;
+    this.element.style.opacity = 0;
     setTimeout(this.element.remove.bind(this.element), 1000);
 };
